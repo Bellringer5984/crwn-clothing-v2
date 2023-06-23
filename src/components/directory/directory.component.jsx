@@ -1,7 +1,10 @@
 
 import CategoryItem from "../category-item/category-item.component"
 
-export const Directory = ( {categories}) => {
+import './directory.styles.scss'
+
+
+const Directory = ( {categories}) => {
     return (
         <div className="directory-container">
             {categories.map((category) => (
@@ -12,3 +15,4 @@ export const Directory = ( {categories}) => {
 
 }
 
+export default Directory
